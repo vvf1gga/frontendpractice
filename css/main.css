@@ -1,12 +1,7 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-}
+@import "reset.css";
 
-.tech-stack-section ul {
-    display: flex;
-    }
+@import "../fonts/fonts.css";
 
-.footer .info {
-    display: flex;
-}
+@import "../fonts/common.css";
+
+@import "components/main.css";
