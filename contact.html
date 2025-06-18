@@ -3,9 +3,12 @@
 <head>
     <link rel="stylesheet" href="./css/main.css">
     <title>Contacts</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 <body>
+    <div class="overlay"></div>
     <header class="header">
         <a href="" class="logo">
             <img src="./img/logo.svg" alt="">
@@ -48,31 +51,47 @@
                 </a>
             </li>
         </ul>
+
+        <button class="nav-btn">
+            <span class="nav-btn-line"></span>
+            <span class="nav-btn-line"></span>
+            <span class="nav-btn-line"></span>
+        </button>
     </header>
 
-    <form action="">
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name">
+    <form action="" class="form">
+        <div class="form-row">
+            <div class="form-col">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-col">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
         </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email">
+        <div class="form-row">
+            <div class="form-col">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone">
+            </div>
+            <div class="form-col">
+                <label for="fax">Fax:</label>
+                <input type="text" id="fax">
+            </div>
         </div>
-        <div>
-            <label for="phone">Phone:</label>
-            <input type="text" id="phone">
+        <div class="form-row flex-end">
+            <div class="form-col">
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" cols="30" rows="10">
+                </textarea>
+            </div>
         </div>
-        <div>
-            <label for="fax">Fax:</label>
-            <input type="text" id="fax">
+        <div class="form-row flex-end cols-auto">
+            <div class="form-col">
+                <button class="button" type="button" submit">Send</button>
+            </div>
         </div>
-        <div>
-            <label for="description">Description:</label>
-            <textarea name="description" id="description" cols="30" rows="10">
-            </textarea>
-        </div>
-        <button type="submit">Send</button>
     </form>
 
     <footer class="footer">
@@ -120,6 +139,8 @@
         </nav>
     </footer>
 
+    <script src="js/main.js"></script>
+    
 </body>
 
 </html>
