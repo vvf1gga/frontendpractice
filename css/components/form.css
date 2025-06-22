@@ -24,3 +24,24 @@
     flex: 0 0 auto;
     width: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .form .form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form .form-row>*:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .form .form-col {
+        flex: 1 0 100%;
+        width: 100%;
+    }
+
+    .form .form-row.flex-end {
+        justify-content: center;
+    }
+}
