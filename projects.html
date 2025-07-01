@@ -1,66 +1,144 @@
+<!doctype html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./css/main.css">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>My Projects</title>
+    <link rel="stylesheet" media="all" href="./css/main.css">
+    <link rel="stylesheet" media="all" href="./css/pages/projects.css">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
-<body>
-    <div class="overlay"></div>
-    <header class="header">
-        <a href="" class="logo">
-            <img src="./img/logo.svg" alt="">
-        </a>
+<body class="projects-page">
+    <div class="container">
+        <header class="header">
+            <div class="overlay"></div>
+            <a href="" class="logo">
+                <img src="./img/logo.svg" alt="">
+            </a>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="item">
+                        <a class="link" href="./index.html">Home</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="./about.html">About</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="./my-tech-stack.html">Tech Stack</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="./projects.html">Projects</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="social-list">
+                <li class="item">
+                    <a href="">
+                        <img class="icon" src="./img/github.svg" alt="">
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="">
+                        <img class="icon" src="./img/x.svg" alt="">
+                    </a>
+                </li>
+                <li class="item">
 
-        <nav class="nav">
-            <ul class="list">
-                <li class="item">
-                    <a class="link" href="./index.html">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="./about.html">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="./my-tech-stack.html">Tech Stack</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="./projects.html">Projects</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="./contact.html">Contact</a>
+                    <a href="">
+                        <img class="icon" src="./img/linkedin.svg" alt="">
+                    </a>
                 </li>
             </ul>
-        </nav>
+            <button class="nav-btn">
+                <span class="nav-btn-line"></span>
+                <span class="nav-btn-line"></span>
+                <span class="nav-btn-line"></span>
+            </button>
+        </header>
+        <div class="page-content">
+            <div class="desc">
+                <h1 class="h1 title">Projects</h1>
+                <p class="subtitle">Things I've built so far</p>
+            </div>
+            <form class="js-filters filters">
+                <select name="technology" class="select" id="technology-select">
+                    <option value="">Technology</option>
+                    <option value="react">React</option>
+                    <option value="java-script">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="sass">SASS</option>
+                </select>
+                <select name="theme" class="select" id="theme-select">
+                    <option value="">Theme</option>
+                    <option value="landing">Landing</option>
+                    <option value="ecommerce">E commerce</option>
+                    <option value="blog">Blog</option>
+                </select>
+                <select name="platform" class="select" id="platform-select">
+                    <option value="">Platform</option>
+                    <option value="web">Web</option>
+                    <option value="ios">Ios</option>
+                    <option value="android">Android</option>
+                </select>
+            </form>
 
-        <ul class="social-list">
-            <li class="item">
-                <a href="">
-                    <img class="icon" src="./img/github.svg" alt="">
-                </a>
-            </li>
-            <li class="item">
-                <a href="">
-                    <img class="icon" src="./img/x.svg" alt="">
-                </a>
-            </li>
-            <li class="item">
-                <a href="">
-                    <img class="icon" src="./img/linkedin.svg" alt="">
-                </a>
-            </li>
-        </ul>
+            <p class="js-no-results hidden">There are no items that satisfy filter</p>
 
-        <button class="nav-btn">
-            <span class="nav-btn-line"></span>
-            <span class="nav-btn-line"></span>
-            <span class="nav-btn-line"></span>
-        </button>
-    </header>
+            <section class="projects-section">
+                <div class="js-projects-container inner"></div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="info">
+                <a href="tel:+91 12345 09876">+91 12345 09876</a>
+                <a href="mailto:info@example.com">info@example.com</a>
+                <ul class="social-list">
 
+                    <li class="item">
+                        <a href="">
+                            <img class="icon" src="./img/github.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img class="icon" src="./img/x.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img class="icon" src="./img/linkedin.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="./my-tech-stack.html">Tech Stack</a>
+                    </li>
+                    <li>
+                        <a href="./projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
     <script src="js/main.js"></script>
-    
+    <script src="./js/projects.js"></script>
 </body>
 
 </html>
