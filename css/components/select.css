@@ -12,3 +12,35 @@
     font-size: 16px;
     color: #666;
 }
+
+@media screen and (max-width: 768px) {
+    .filters-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .select {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 16px;
+        background-position: right 16px center;
+        background-size: 20px 20px;
+    }
+
+    .view-toggle {
+        align-self: flex-end;
+        padding: 8px;
+    }
+
+    .view-toggle img {
+        width: 24px;
+        height: 24px;
+    }
+}
